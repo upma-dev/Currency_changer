@@ -49,18 +49,27 @@ export default function Home() {
                                 <div className="aspect-w-16 aspect-h-9">
                                     <img 
                                         className="w-full h-auto rounded-lg" 
-                                        src="https://cdn-icons-png.flaticon.com/512/2933/2933116.png" 
-                                        alt="Currency Converter Illustration" 
+                                        src="https://img.freepik.com/free-vector/indian-rupee-currency-symbol-concept-illustration_114360-10179.jpg" 
+                                        alt="Indian Currency and Coins Illustration" 
                                     />
                                 </div>
+                                {/* Decorative Money Elements */}
+                                <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-100 rounded-full opacity-50 blur-xl"></div>
+                                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-purple-100 rounded-full opacity-50 blur-xl"></div>
+                                {/* Floating Currency Icons */}
+                                <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 text-4xl">₹</div>
+                                <div className="absolute bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2 text-4xl">🪙</div>
+                                <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2 text-4xl">💱</div>
+                                <div className="absolute top-1/4 right-0 transform translate-x-1/2 -translate-y-1/2 text-4xl">🪙</div>
+                                <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 translate-y-1/2 text-4xl">₹</div>
                             </div>
-                            <div className="absolute -inset-4 bg-blue-100 rounded-lg -z-10 blur-xl opacity-50"></div>
+                            <div className="absolute -inset-4 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg -z-10 blur-xl opacity-50"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Features Section */}
+            {/* Features Section with Money Icons */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Our Converter</h2>
@@ -72,19 +81,19 @@ export default function Home() {
                         {
                             title: "Real-Time Rates",
                             description: "Get the most up-to-date exchange rates from reliable sources",
-                            icon: "📈",
+                            icon: "₹",
                             bgColor: "from-blue-50 to-blue-100"
                         },
                         {
                             title: "Multiple Currencies",
                             description: "Convert between 170+ global currencies instantly",
-                            icon: "🌍",
+                            icon: "🪙",
                             bgColor: "from-purple-50 to-purple-100"
                         },
                         {
                             title: "Easy to Use",
                             description: "Simple and intuitive interface for quick conversions",
-                            icon: "✨",
+                            icon: "💱",
                             bgColor: "from-indigo-50 to-indigo-100"
                         }
                     ].map((feature, index) => (
