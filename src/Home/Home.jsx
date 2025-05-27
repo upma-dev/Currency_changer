@@ -11,45 +11,48 @@ export default function Home() {
                         {/* Left Content */}
                         <div className="space-y-8 transform transition-all duration-500 hover:scale-105">
                             <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-                                Transform Your
-                                <span className="block text-orange-600 mt-2">Digital Experience</span>
+                                Currency
+                                <span className="block text-orange-600 mt-2">Converter Pro</span>
                             </h1>
                             <p className="text-xl text-gray-600 max-w-lg">
-                                Experience the next level of digital innovation with our cutting-edge solutions. 
-                                Download now and discover a world of possibilities.
+                                Convert currencies in real-time with our powerful and easy-to-use currency converter. 
+                                Get accurate exchange rates instantly.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link
-                                    to="/"
+                                    to="/converter"
                                     className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-orange-600 rounded-lg transform transition-all duration-300 hover:bg-orange-700 hover:scale-105 hover:shadow-lg"
                                 >
                                     <svg
                                         className="w-6 h-6 mr-2"
-                                        fill="currentColor"
+                                        fill="none"
+                                        stroke="currentColor"
                                         viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
-                                        <path d="M1.571 23.664l10.531-10.501 3.712 3.701-12.519 6.941c-.476.264-1.059.26-1.532-.011l-.192-.13zm9.469-11.56l-10.04 10.011v-20.022l10.04 10.011zm6.274-4.137l4.905 2.719c.482.268.781.77.781 1.314s-.299 1.046-.781 1.314l-5.039 2.793-4.015-4.003 4.149-4.137zm-15.854-7.534c.09-.087.191-.163.303-.227.473-.271 1.056-.275 1.532-.011l12.653 7.015-3.846 3.835-10.642-10.612z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
-                                    Download Now
+                                    Convert Now
                                 </Link>
                                 <Link
-                                    to="/features"
+                                    to="/rates"
                                     className="inline-flex items-center px-8 py-4 text-lg font-semibold text-orange-600 border-2 border-orange-600 rounded-lg transform transition-all duration-300 hover:bg-orange-50 hover:scale-105"
                                 >
-                                    Learn More
+                                    View Rates
                                 </Link>
                             </div>
                         </div>
                         
                         {/* Right Content - Image */}
                         <div className="relative transform transition-all duration-500 hover:scale-105">
-                            <div className="relative z-10">
-                                <img 
-                                    className="w-full h-auto rounded-lg shadow-2xl" 
-                                    src="https://i.ibb.co/5BCcDYB/Remote2.png" 
-                                    alt="Hero illustration" 
-                                />
+                            <div className="relative z-10 bg-white p-6 rounded-xl shadow-2xl">
+                                <div className="aspect-w-16 aspect-h-9">
+                                    <img 
+                                        className="w-full h-auto rounded-lg" 
+                                        src="https://cdn-icons-png.flaticon.com/512/2933/2933116.png" 
+                                        alt="Currency Converter Illustration" 
+                                    />
+                                </div>
                             </div>
                             <div className="absolute -inset-4 bg-orange-100 rounded-lg -z-10 blur-xl opacity-50"></div>
                         </div>
@@ -60,26 +63,26 @@ export default function Home() {
             {/* Features Section */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
-                    <p className="text-xl text-gray-600">Discover the features that make us stand out</p>
+                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Our Converter</h2>
+                    <p className="text-xl text-gray-600">Experience the best currency conversion tool</p>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {[
                         {
-                            title: "Lightning Fast",
-                            description: "Experience blazing fast performance with our optimized platform",
-                            icon: "⚡"
+                            title: "Real-Time Rates",
+                            description: "Get the most up-to-date exchange rates from reliable sources",
+                            icon: "📈"
                         },
                         {
-                            title: "Secure & Reliable",
-                            description: "Your data is protected with enterprise-grade security",
-                            icon: "🔒"
+                            title: "Multiple Currencies",
+                            description: "Convert between 170+ global currencies instantly",
+                            icon: "🌍"
                         },
                         {
-                            title: "24/7 Support",
-                            description: "Our dedicated team is always here to help you",
-                            icon: "💬"
+                            title: "Easy to Use",
+                            description: "Simple and intuitive interface for quick conversions",
+                            icon: "✨"
                         }
                     ].map((feature, index) => (
                         <div 
@@ -98,13 +101,13 @@ export default function Home() {
             <div className="bg-orange-600 text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                     <div className="text-center">
-                        <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-                        <p className="text-xl mb-8">Join thousands of satisfied users today</p>
+                        <h2 className="text-3xl font-bold mb-4">Start Converting Now</h2>
+                        <p className="text-xl mb-8">Join thousands of users who trust our currency converter</p>
                         <Link
-                            to="/download"
+                            to="/converter"
                             className="inline-flex items-center px-8 py-4 text-lg font-semibold text-orange-600 bg-white rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
                         >
-                            Download Now
+                            Convert Currency
                         </Link>
                     </div>
                 </div>
