@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './Home/Home';
 import Converter from './components/Converter';
+import Rates from './Home/Rates';
 
 function App() {
     return (
@@ -13,7 +14,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/converter" element={<Converter />} />
-                        <Route path="/rates" element={<Converter />} />
+                        <Route path="/rates" element={<Rates />} />
                     </Routes>
                 </main>
                 <footer className="bg-gray-800 text-white py-8 mt-12">
